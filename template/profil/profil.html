@@ -1,0 +1,20 @@
+{{define "profilIndex"}}
+        {{template "headerIndex" .}}
+
+         <div style="padding:25px;padding-left: 50px">
+             <div class="">
+                 <div class="uk-column-1-2@xl">
+                     <p><b>Adı : </b> {{.User.Adi}}</p>
+                     <p><b>Soyadı : </b> {{.User.Soyadi}}</p>
+                     <p><b>Kullanıcı Adı :</b> {{.User.Username}}  </p>
+                     <p><b>MailAdresi : </b>{{.User.Email}} </p>
+
+                 </div>
+                 <form method="post" enctype="multipart/form-data">
+                    <input class="uk-button uk-button-primary" type="submit" value="Düzenle">
+                 </form>
+                 </div>
+             </div>
+         </div>
+
+        {{end}}
